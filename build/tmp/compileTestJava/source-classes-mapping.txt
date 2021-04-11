@@ -1,6 +1,0 @@
-ru/jb/ushaev/literals/TaskFileTest.java
- ru.jb.ushaev.literals.TaskFileTest
-ru/jb/ushaev/literals/EmptyStringsFileTest.java
- ru.jb.ushaev.literals.EmptyStringsFileTest
-ru/jb/ushaev/literals/EmptyFileTest.java
- ru.jb.ushaev.literals.EmptyFileTest

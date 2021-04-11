@@ -1,4 +1,0 @@
-ru/jb/ushaev/literals/RepCounter.java
- ru.jb.ushaev.literals.RepCounter
-ru/jb/ushaev/literals/Main.java
- ru.jb.ushaev.literals.Main

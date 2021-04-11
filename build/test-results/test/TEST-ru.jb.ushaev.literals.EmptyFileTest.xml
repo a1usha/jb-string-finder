@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.jb.ushaev.literals.EmptyFileTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-07T08:43:52" hostname="ZENBOOK13" time="0.006">
-  <properties/>
-  <testcase name="shouldFindNothing" classname="ru.jb.ushaev.literals.EmptyFileTest" time="0.006"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
