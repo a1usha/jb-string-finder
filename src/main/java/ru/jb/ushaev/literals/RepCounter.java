@@ -23,7 +23,7 @@ public class RepCounter {
      */
     public RepCounter(BufferedReader br) {
         this.br = br;
-        this.searchPattern = Pattern.compile("'([^']*)'|\"([^\"]*)\"");
+        this.searchPattern = Pattern.compile("\"(\\\\.|[^\"])*\"|'(\\\\.|[^'])*'");
     }
 
     /**
@@ -55,13 +55,12 @@ public class RepCounter {
 
             while (m.find()) {
                 String literal = m.group(0);
-                literal = literal.replace("\"", "").replace("'", "");
 
-                if (literalMap.containsKey(literal)) {
-                    literalMap.get(literal).add(curLine);
-                } else {
-                    literalMap.put(literal, new HashSet<>(Collections.singletonList(curLine)));
-                }
+                // remove outer quotes
+                literal = literal.substring(1, literal.length() - 1);
+
+                int finalCurLine = curLine;
+                literalMap.computeIfAbsent(literal, k -> new HashSet<>(Collections.singletonList(finalCurLine))).add(finalCurLine);
             }
             curLine++;
         }
